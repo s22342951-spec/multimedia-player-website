@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#031323" />
+  <title>Smart Multimedia Player｜智慧多媒體播放器</title>
+  <meta name="description" content="整合素材管理、多設備播放、版面調整與攝影機姿態辨識的智慧多媒體播放器。" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="回到首頁"><span class="brand-mark" aria-hidden="true"></span><span>Smart Multimedia Player</span></a>
+    <nav class="site-nav" aria-label="網站導覽">
+      <a href="#overview">產品總覽</a><a href="#features">九大功能</a><a href="#architecture">系統架構</a><a href="#scenarios">應用場景</a>
+    </nav>
+    <a class="header-action" href="#contact">了解導入方式</a>
+  </header>
+
+  <main id="top">
+    <section class="hero" aria-labelledby="hero-title">
+      <img class="hero-image" src="assets/multimedia-player-nine-grid.png" alt="多媒體播放器九大功能總覽" />
+      <div class="hero-shade" aria-hidden="true"></div>
+      <div class="hero-content">
+        <p class="eyebrow">影像 × 互動 × 集中管理</p>
+        <h1 id="hero-title">智慧多媒體<br />播放器</h1>
+        <p class="hero-copy">從素材上傳、設備排程到姿態辨識觸發，把每一個螢幕轉化為即時互動的內容載體。</p>
+        <div class="hero-actions">
+          <a class="primary-action" href="#features">探索九大功能</a>
+          <a class="text-action" href="#architecture">查看運作架構 <span aria-hidden="true">→</span></a>
+        </div>
+      </div>
+      <a class="scroll-cue" href="#overview" aria-label="向下查看產品總覽"><span>SCROLL</span><i aria-hidden="true"></i></a>
+    </section>
+
+    <section class="signal-band" id="overview" aria-label="產品能力摘要">
+      <div><strong>01</strong><span>單一 Server<br />集中管理</span></div>
+      <div><strong>03</strong><span>JPG・PNG・MP4<br />素材格式</span></div>
+      <div><strong>09</strong><span>完整功能流程<br />一站完成</span></div>
+      <div><strong>∞</strong><span>彈性擴充<br />房間端設備</span></div>
+    </section>
+
+    <section class="section story-intro">
+      <div class="section-kicker">PRODUCT OVERVIEW</div>
+      <div><h2>不只播放內容，<br />更能回應現場。</h2></div>
+      <div class="intro-copy">
+        <p>管理者透過網頁中控台，將媒體素材配置到不同房間設備；房間端接收設定後全螢幕播放，並以攝影機即時辨識使用者動作。</p>
+        <p>當系統偵測到鞠躬或合掌等指定姿態，播放畫面會自動從待機內容切換至觸發內容，創造自然、無接觸的互動體驗。</p>
+      </div>
+    </section>
+
+    <section class="section feature-section" id="features">
+      <div class="section-heading">
+        <div><p class="eyebrow">ONE SYSTEM, NINE CAPABILITIES</p><h2>九格看懂完整流程</h2></div>
+        <p>每項功能都使用九格圖中對應的獨立畫面輔助說明。從管理端到播放端，每一步都在同一套系統內完成。</p>
+      </div>
+      <div class="feature-list">
+        <article class="feature-story">
+          <div class="feature-image"><img src="assets/feature-01.png" alt="上傳多媒體素材功能畫面" /></div>
+          <div class="feature-copy"><span>01 / MEDIA LIBRARY</span><h3>上傳多媒體素材</h3><p>支援 JPG、PNG、MP4 等常用格式，將圖片與影片集中上傳至中控系統，再派送到指定設備。</p><div class="feature-tags"><i>集中素材庫</i><i>拖曳上傳</i><i>跨設備派送</i></div></div>
+        </article>
+        <article class="feature-story">
+          <div class="feature-image"><img src="assets/feature-02.png" alt="設定各設備播放內容功能畫面" /></div>
+          <div class="feature-copy"><span>02 / DEVICE MANAGEMENT</span><h3>設定各設備播放內容</h3><p>在中控台查看房間端連線狀態，分別指定待機畫面、觸發畫面，以及各設備需要播放的內容。</p><div class="feature-tags"><i>多房間管理</i><i>設備狀態</i><i>A／B 畫面</i></div></div>
+        </article>
+        <article class="feature-story">
+          <div class="feature-image"><img src="assets/feature-03.png" alt="調整素材顯示方式功能畫面" /></div>
+          <div class="feature-copy"><span>03 / LAYOUT EDITOR</span><h3>調整素材顯示方式</h3><p>依螢幕比例調整素材大小、位置與旋轉角度，讓不同尺寸的內容符合現場滿版播放需求。</p><div class="feature-tags"><i>比例設定</i><i>拖拉縮放</i><i>旋轉 90°</i></div></div>
+        </article>
+        <article class="feature-story">
+          <div class="feature-image"><img src="assets/feature-04.png" alt="系統架構說明畫面" /></div>
+          <div class="feature-copy"><span>04 / SYSTEM ARCHITECTURE</span><h3>系統架構說明</h3><p>Server 統一管理素材與排程，透過 WebSocket 和 HTTP API 與多台房間端 Client 即時溝通。</p><div class="feature-tags"><i>中央 Server</i><i>即時通訊</i><i>多端擴充</i></div></div>
+        </article>
+        <article class="feature-story">
+          <div class="feature-image"><img src="assets/feature-05.png" alt="房間端設備運作功能畫面" /></div>
+          <div class="feature-copy"><span>05 / ROOM CLIENT</span><h3>房間端設備運作</h3><p>Client 連線至 Server 後下載指定素材、寫入本機快取並進行全螢幕播放，同時持續回報設備狀態。</p><div class="feature-tags"><i>自動連線</i><i>本機快取</i><i>全螢幕播放</i></div></div>
+        </article>
+        <article class="feature-story">
+          <div class="feature-image"><img src="assets/feature-06.png" alt="攝影機姿態辨識功能畫面" /></div>
+          <div class="feature-copy"><span>06 / POSE RECOGNITION</span><h3>攝影機姿態辨識</h3><p>運用 OpenCV 與 MediaPipe 分析攝影機畫面中的人體節點，即時判斷使用者姿態。</p><div class="feature-tags"><i>OpenCV</i><i>MediaPipe</i><i>即時骨架</i></div></div>
+        </article>
+        <article class="feature-story">
+          <div class="feature-image"><img src="assets/feature-07.png" alt="偵測指定動作功能畫面" /></div>
+          <div class="feature-copy"><span>07 / GESTURE TRIGGER</span><h3>偵測指定動作</h3><p>當使用者完成鞠躬、合掌等指定動作，系統便確認互動事件並送出播放觸發。</p><div class="feature-tags"><i>鞠躬偵測</i><i>合掌偵測</i><i>非接觸互動</i></div></div>
+        </article>
+        <article class="feature-story">
+          <div class="feature-image"><img src="assets/feature-08.png" alt="自動切換播放畫面功能示意" /></div>
+          <div class="feature-copy"><span>08 / AUTO SWITCHING</span><h3>自動切換播放畫面</h3><p>辨識條件成立後，播放器從待機畫面自動切換至觸發內容，完成後再回到原始播放狀態。</p><div class="feature-tags"><i>待機畫面</i><i>觸發內容</i><i>自動回復</i></div></div>
+        </article>
+        <article class="feature-story">
+          <div class="feature-image"><img src="assets/feature-09.png" alt="多元應用場域示意畫面" /></div>
+          <div class="feature-copy"><span>09 / USE CASES</span><h3>適用多元場域</h3><p>適用於展場、紀念空間、互動展示與房間型多媒體播放，也能依現場需求持續擴充。</p><div class="feature-tags"><i>展場活動</i><i>紀念空間</i><i>互動展示</i></div></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section architecture-section" id="architecture">
+      <div class="architecture-copy">
+        <p class="eyebrow">SYSTEM ARCHITECTURE</p><h2>一個中控，連結每個空間。</h2>
+        <p>Server 負責素材管理、設備設定與即時指令；各房間 Client 負責下載內容、全螢幕播放與攝影機辨識。WebSocket 維持即時連線，HTTP API 傳遞素材與設定。</p>
+        <div class="protocol-list"><span>WebSocket 即時控制</span><span>HTTP API 素材傳輸</span><span>Client 本機快取</span></div>
+      </div>
+      <div class="architecture-map" aria-label="系統連線架構">
+        <div class="map-node console-node"><small>WEB CONSOLE</small><strong>中控管理介面</strong><span>素材・排程・設備狀態</span></div>
+        <div class="map-link"><span>HTTP</span><i></i><span>WebSocket</span></div>
+        <div class="map-node server-node"><small>CORE SERVER</small><strong>Server.py</strong><span>管理與即時訊息中心</span></div>
+        <div class="map-branches" aria-hidden="true"><i></i><i></i><i></i></div>
+        <div class="client-row">
+          <div class="map-node"><small>ROOM A</small><strong>Client</strong><span>播放・辨識</span></div>
+          <div class="map-node"><small>ROOM B</small><strong>Client</strong><span>播放・辨識</span></div>
+          <div class="map-node"><small>ROOM C+</small><strong>Client</strong><span>彈性擴充</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section scenario-section" id="scenarios">
+      <div class="section-heading">
+        <div><p class="eyebrow">BUILT FOR REAL SPACES</p><h2>讓內容出現在對的場景</h2></div>
+        <p>適合需要集中控管、跨設備播放，或透過動作建立互動的實體空間。</p>
+      </div>
+      <div class="scenario-grid">
+        <article><span>01</span><h3>展場活動</h3><p>依展區設備派送內容，讓觀眾動作成為展示的一部分。</p></article>
+        <article><span>02</span><h3>紀念空間</h3><p>以鞠躬、合掌等動作，觸發莊重且自然的影像回應。</p></article>
+        <article><span>03</span><h3>互動展示</h3><p>透過攝影機辨識，打造不需接觸螢幕的互動流程。</p></article>
+        <article><span>04</span><h3>房間型播放</h3><p>為不同空間配置專屬待機與觸發內容，統一遠端管理。</p></article>
+      </div>
+    </section>
+
+    <section class="contact-section" id="contact">
+      <p class="eyebrow">SMART MULTIMEDIA PLAYER</p>
+      <h2>讓每一面螢幕，<br />都有回應現場的能力。</h2>
+      <a class="primary-action" href="#top">重新查看產品全貌</a>
+    </section>
+  </main>
+
+  <footer class="site-footer"><span>Smart Multimedia Player</span><span>影像 × 互動 × 集中管理</span><a href="#top">TOP ↑</a></footer>
+  <script src="script.js"></script>
+</body>
+</html>
